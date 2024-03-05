@@ -4,7 +4,6 @@ public class User {
     private String username;
     private String email;
 
-    // Constructor
     public User(String name, String password, String username, String email) {
         this.name = name;
         this.password = password;
