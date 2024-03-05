@@ -1,8 +1,8 @@
 public class User {
-    private String name;
-    private String password;
-    private String username;
-    private String email;
+    public String name;
+    public String password;
+    public String username;
+    public String email;
 
     public User(String name, String password, String username, String email) {
         this.name = name;
@@ -29,7 +29,6 @@ public class User {
         this.password = password;
     }
 
-    //Username methods
     public String getUsername() {
         return username;
     }
@@ -38,7 +37,6 @@ public class User {
         this.username = username;
     }
 
-    //Email methods
     public String getEmail() {
         return email;
     }
