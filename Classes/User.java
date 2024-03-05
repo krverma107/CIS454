@@ -1,8 +1,8 @@
 public class User {
-    public String name;
-    public String password;
-    public String username;
-    public String email;
+    private String name;
+    private String password;
+    private String username;
+    private String email;
 
     public User(String name, String password, String username, String email) {
         this.name = name;
