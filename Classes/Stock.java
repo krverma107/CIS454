@@ -31,7 +31,7 @@ public class LinkedList {
      public void display() {
         Node current = head;
         while (current != null) {
-            System.out.println("Stock Name: " + current.data.getName() + ", Price: " + current.data.getPrice());
+            System.out.println("Stock Name: " + current.data.getName() + ", Quantity: " + current.data.getPrice());
             current = current.next;
         }
     }
