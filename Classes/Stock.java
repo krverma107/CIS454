@@ -27,6 +27,15 @@ public class LinkedList {
         head = newNode;
     }
 
+      // Method to display the contents of the list
+     public void display() {
+        Node current = head;
+        while (current != null) {
+            System.out.println("Stock Name: " + current.data.getName() + ", Price: " + current.data.getPrice());
+            current = current.next;
+        }
+    }
+
 }
 
 
