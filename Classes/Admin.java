@@ -1,7 +1,18 @@
 public class Admin extends User {
-    private int pantryid;
+    
+    private List<String> pickUpTimes;
 
-    public Admin(String name, String password, String username, String email, int pantryid) {
-        super(name, password, username, email, pantryid);
+    public scheduleManager() {
+        this.pickUpTimes = new ArrayList<>();
+    }
+
+    public List<String> addPickUpTimes(String time) {
+        pickupTimes.add(time);
+    }
+
+    public void addStock(Stock stock, Pantry pantry){
+        // update pantry stock
+
+    }
 
 }
