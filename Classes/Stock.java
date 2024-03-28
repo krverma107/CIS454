@@ -1,35 +1,5 @@
-// Stock.java
-public class Stock {
-    private String name;
-    private int quantity;
-
-    // Constructor
-    public Stock(String name, double quantity) {
-        this.name = name;
-        this.quantity = quantity;
-    }
-
-    // Getters and setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity += quantity;
-    }
-}
-
-
 // Node.java
-public class Node {
+class Node {
     public Stock data;
     public Node next;
 
@@ -57,13 +27,43 @@ public class LinkedList {
         head = newNode;
     }
 
-      // Method to display the contents of the list
+     // Method to display the contents of the list
      public void display() {
         Node current = head;
         while (current != null) {
-            System.out.println("Stock Name: " + current.data.getName() + ", Quantity: " + current.data.getPrice());
+            System.out.println("Stock Name: " + current.data.getName() + ", Price: " + current.data.getQuantity());
             current = current.next;
         }
     }
 
+}
+
+
+// Stock.java
+public class Stock {
+    private String name;
+    private double quantity;
+
+    // Constructor
+    public Stock(String name, double quantity) {
+        this.name = name;
+        this.quantity = quantity;
+    }
+
+    // Getters and setters
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity += quantity;
+    }
 }
